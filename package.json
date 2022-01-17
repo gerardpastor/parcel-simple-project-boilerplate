@@ -1,0 +1,36 @@
+{
+  "name": "parcel-simple-project-boilerplate",
+  "version": "1.0.0",
+  "description": "Base files for a Parcel2 simple projects",
+  "author": "Gerard Pastor",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel serve './src/index.html' --dist-dir build",
+    "build": "rimraf dist && parcel build './src/index.html' --no-cache --no-source-maps --public-url ./"
+  },
+  "targets": {
+    "": {
+      "publicUrl": "./"
+    }
+  },
+  "browserslist": [
+    "last 2 versions",
+    "not dead"
+  ],
+  "sass": {
+    "includePaths": [
+      "./node_modules"
+    ]
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.2.0",
+    "autoprefixer": "^10.4.2",
+    "parcel": "^2.2.0",
+    "postcss": "^8.1.0",
+    "posthtml-expressions": "^1.9.0",
+    "posthtml-extend": "^0.6.2",
+    "posthtml-include": "^1.7.2",
+    "posthtml-modules": "^0.8.0",
+    "rimraf": "^3.0.2"
+  }
+}

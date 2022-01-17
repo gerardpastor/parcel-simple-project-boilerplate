@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+    <title>{{ site.title }}</title>
+
+    <link href="/src/styles/main.scss" rel="stylesheet" />
+    <script defer type="module" src="/src/scripts/app.js"></script>
+  </head>
+  <body class="layout layout--app">
+    <include src="layouts/partials/app-header.html"></include>
+
+    <block name="content"></block>
+
+    <include src="layouts/partials/app-footer.html"></include>
+  </body>
+</html>

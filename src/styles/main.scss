@@ -1,0 +1,31 @@
+@import "reset";
+
+@import "layouts/partials/app-header";
+@import "layouts/partials/app-footer";
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100vh;
+  font-family: sans-serif;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.container {
+  margin-inline: auto;
+  padding: 2rem 0;
+  width: min(90%, 62rem);
+}
+
+h1 {
+  font-size: 3rem;
+  margin-block: 1rem;
+}
+
+p + p {
+  margin-top: 1rem;
+}
